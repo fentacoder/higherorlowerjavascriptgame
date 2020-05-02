@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Or Lower</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="width: 100%; text-align: center;color: white;background-color: black;">
+        Higher Or Lower
+    </h1>
+
+    <div style="display: block; margin-top: 3vh; width: 100%;">
+        <h1 id="gameResponse" style="width: 100%; text-align: center; margin-bottom: 3vh;"></h1>
+
+        <input type="number" id="userInput" placeholder="Enter a number" 
+        style="border-radius: 10px; display: block; margin: 1vh auto; width: 30%;">
+
+        <button id="enterBtn" onclick="checkValue()" style="border-radius: 10px; display: block; margin: 1vh auto; width: 30%;"
+        >Enter
+        </button>
+    </div>
+
+    <button id="restartBtn" onclick="startOver()" style="border-radius: 10px; display: none; margin: 1vh auto; width: 30%;"
+    >Restart
+    </button>
+
+    <h3 id="tries" style="position: fixed; bottom: 0; right: 0;"></h3>
+    <script src="index.js"></script>
+</body>
+</html>
